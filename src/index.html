@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../dist/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">M.H</div>
+      <nav aria-label="Main Navigation">
+        <ul class="header__list">
+          <li><a href="#intro" class="header__link">Home</a></li>
+          <li><a href="#projects" class="header__link">Projects</a></li>
+          <li><a href="#skills" class="header__link">skills</a></li>
+          <li><a href="#contact" class="header__link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro" class="intro">
+        <div class="intro__container">
+          <div class="intro__image-wrapper">
+            <img
+              src="assets/img/mohammad.png"
+              alt="Mohammad's Professional Photo"
+              class="intro__img"
+            />
+          </div>
+
+          <div class="intro__content">
+            <h1 class="intro__heading">Mohammad Hosheyeh.</h1>
+
+            <p class="intro__bio">
+              I am a passionate Web Developer focused on creating accessible,
+              human-centered digital experiences and high-quality user
+              interfaces.
+            </p>
+
+            <div class="intro__actions">
+              <a
+                href="assets/docs/Mohammad-Hosheyeh-CV.pdf"
+                download="Mohammad-Hosheyeh-CV"
+                class="btn btn--primary"
+                >Download CV</a
+              >
+              <a href="#contact" class="btn btn--outline">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2 class="section-title">Latest Projects</h2>
+
+        <div class="projects__grid">
+          <article class="projects__card">
+            <img
+              src="assets/img/sweet-world.png"
+              alt="a shop that sells cakes"
+              class="projects__card-img"
+            />
+            <h3 class="projects__card-title">Sweet World Shop</h3>
+            <p>
+              A simple and easy-to-use webpage for an online store designed
+              specifically for Sweet World, which sells cakes and cake supplies.
+              You can order any product you want from the page.
+            </p>
+          </article>
+
+          <article class="projects__card">
+            <img
+              src="assets/img/business-landing.png"
+              alt="business landing website"
+              class="projects__card-img"
+            />
+            <h3 class="projects__card-title">Business Landing Website</h3>
+            <p>
+              A website dedicated to empowering individuals and organizations by
+              providing innovative solutions that promote growth, inspire
+              creativity, and achieve sustainable success.
+            </p>
+          </article>
+
+          <article class="projects__card">
+            <img
+              src="assets/img/my-portfolio.png"
+              alt="mohammad hosheyeh portfolio page"
+              class="projects__card-img"
+            />
+            <h3 class="projects__card-title">Portfolio Template</h3>
+            <p>
+              Clean and minimal portfolio design focused on performance and
+              accessibility.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills__container">
+          <div class="skills__item">HTML5</div>
+          <div class="skills__item">CSS3 / SCSS</div>
+          <div class="skills__item">JavaScript</div>
+          <div class="skills__item">React</div>
+          <div class="skills__item">Git & Github</div>
+          <div class="skills__item">Responsive Design</div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact__text">
+          I'm currently looking for new opportunities. Whether you have a
+          question or just want to say hi, my inbox is always open!
+        </p>
+
+        <div class="contact__links">
+          <a
+            href="https://www.linkedin.com/in/mohammad-hosheya-b400151a7/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact__link"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/mohammad-hosheyeh"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact__link"
+            >Github</a
+          >
+          <a
+            href="https://www.instagram.com/mohammad_hosheya/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact__link"
+            >Instagram</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Mohammad Hosheyeh 2026. Built with Love & SCSS.</p>
+    </footer>
+  </body>
+</html>

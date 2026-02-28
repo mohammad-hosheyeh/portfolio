@@ -1,0 +1,22 @@
+@use '../utils/utils' as *;
+
+h1, h2, h3 {
+  color: $text-bright;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background: $text-dim;
+  }
+}

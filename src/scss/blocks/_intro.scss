@@ -1,0 +1,61 @@
+@use '../utils/utils' as *;
+
+.intro {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+
+  @include tablet {
+    padding: 100px 5%;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+    }
+  }
+
+  &__heading {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    color: $primary-accent;
+    line-height: 1.1;
+  }
+
+  &__img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px solid $primary-accent;
+    object-fit: cover;
+
+    @include mobile {
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  &__actions {
+    margin-top: 30px;
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .btn--outline {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__bio {
+    max-width: 500px;
+    font-size: 1.1rem;
+  }
+}

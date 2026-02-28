@@ -1,0 +1,51 @@
+@use '../utils/utils' as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+  background: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  @include flex-between;
+
+  @include tablet {
+    padding: 10px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__logo {
+    color: $primary-accent;
+    font-weight: bold;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+
+    @include tablet {
+      gap: 15px;
+    }
+
+    @include mobile {
+      gap: 10px;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    font-weight: 500;
+    color: $text-bright;
+
+    &:hover {
+      color: $primary-accent;
+    }
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+}
